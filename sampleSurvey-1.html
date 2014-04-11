@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sample Survey</title>
+
+<link rel="stylesheet" type="text/css" href="survey.css">
+<script src="js/d3.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/survey.js"></script>
+
+</head>
+
+<body>
+
+<div class="question">
+<p class="question_heading">Toronto should focus on subways not streetcars</p>
+<input type="radio" id="q1a" name="question1" value="1"/><label for="q1a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q1b" name="question1" value="2"/><label for="q1b"><p></p>Disagree</label>
+<input type="radio" id="q1c" name="question1" value="3"/><label for="q1c"><p></p>Neutral</label>
+<input type="radio" id="q1d" name="question1" value="4"/><label for="q1d"><p></p>Agree</label>
+<input type="radio" id="q1e" name="question1" value="5"/><label for="q1e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">Staffing levels at city hall are too high</p>
+<input type="radio" id="q2a" name="question2" value="1"/><label for="q2a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q2b" name="question2" value="2"/><label for="q2b"><p></p>Disagree</label>
+<input type="radio" id="q2c" name="question2" value="3"/><label for="q2c"><p></p>Neutral</label>
+<input type="radio" id="q2d" name="question2" value="4"/><label for="q2d"><p></p>Agree</label>
+<input type="radio" id="q2e" name="question2" value="5"/><label for="q2e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">It is important for the Mayor of Toronto to show support for the LGBT community</p>
+<input type="radio" id="q3a" name="question3" value="1"/><label for="q3a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q3b" name="question3" value="2"/><label for="q3b"><p></p>Disagree</label>
+<input type="radio" id="q3c" name="question3" value="3"/><label for="q3c"><p></p>Neutral</label>
+<input type="radio" id="q3d" name="question3" value="4"/><label for="q3d"><p></p>Agree</label>
+<input type="radio" id="q3e" name="question3" value="5"/><label for="q3e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">The Gardiner Expressway should be torn down east of Jarvis Street</p>
+<input type="radio" id="q4a" name="question4" value="1"/><label for="q4a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q4b" name="question4" value="2"/><label for="q4b"><p></p>Disagree</label>
+<input type="radio" id="q4c" name="question4" value="3"/><label for="q4c"><p></p>Neutral</label>
+<input type="radio" id="q4d" name="question4" value="4"/><label for="q4d"><p></p>Agree</label>
+<input type="radio" id="q4e" name="question4" value="5"/><label for="q4e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">Bicycles do not belong on the road</p>
+<input type="radio" id="q5a" name="question5" value="1"/><label for="q5a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q5b" name="question5" value="2"/><label for="q5b"><p></p>Disagree</label>
+<input type="radio" id="q5c" name="question5" value="3"/><label for="q5c"><p></p>Neutral</label>
+<input type="radio" id="q5d" name="question5" value="4"/><label for="q5d"><p></p>Agree</label>
+<input type="radio" id="q5e" name="question5" value="5"/><label for="q5e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">Garbage collection should be privatized</p>
+<input type="radio" id="q6a" name="question6" value="1"/><label for="q6a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q6b" name="question6" value="2"/><label for="q6b"><p></p>Disagree</label>
+<input type="radio" id="q6c" name="question6" value="3"/><label for="q6c"><p></p>Neutral</label>
+<input type="radio" id="q6d" name="question6" value="4"/><label for="q6d"><p></p>Agree</label>
+<input type="radio" id="q6e" name="question6" value="5"/><label for="q6e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">Light rail is appropriate for Toronto</p>
+<input type="radio" id="q7a" name="question7" value="1"/><label for="q7a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q7b" name="question7" value="2"/><label for="q7b"><p></p>Disagree</label>
+<input type="radio" id="q7c" name="question7" value="3"/><label for="q7c"><p></p>Neutral</label>
+<input type="radio" id="q7d" name="question7" value="4"/><label for="q7d"><p></p>Agree</label>
+<input type="radio" id="q7e" name="question7" value="5"/><label for="q7e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">The Pan Am games should be funded through corporate sponsors, not taxpayer dollars</p>
+<input type="radio" id="q8a" name="question8" value="1"/><label for="q8a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q8b" name="question8" value="2"/><label for="q8b"><p></p>Disagree</label>
+<input type="radio" id="q8c" name="question8" value="3"/><label for="q8c"><p></p>Neutral</label>
+<input type="radio" id="q8d" name="question8" value="4"/><label for="q8d"><p></p>Agree</label>
+<input type="radio" id="q8e" name="question8" value="5"/><label for="q8e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">Public recreation programs should charge access fees</p>
+<input type="radio" id="q9a" name="question9" value="1"/><label for="q9a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q9b" name="question9" value="2"/><label for="q9b"><p></p>Disagree</label>
+<input type="radio" id="q9c" name="question9" value="3"/><label for="q9c"><p></p>Neutral</label>
+<input type="radio" id="q9d" name="question9" value="4"/><label for="q9d"><p></p>Agree</label>
+<input type="radio" id="q9e" name="question9" value="5"/><label for="q9e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="question">
+<p class="question_heading">Extended hours are an important aspect of the services that libraries offer</p>
+<input type="radio" id="q10a" name="question10" value="1"/><label for="q10a"><p></p>Strongly Disagree</label>
+<input type="radio" id="q10b" name="question10" value="2"/><label for="q10b"><p></p>Disagree</label>
+<input type="radio" id="q10c" name="question10" value="3"/><label for="q10c"><p></p>Neutral</label>
+<input type="radio" id="q10d" name="question10" value="4"/><label for="q10d"><p></p>Agree</label>
+<input type="radio" id="q10e" name="question10" value="5"/><label for="q10e"><p></p>Strongly Agree</label>
+</div>
+
+<div class="submit_button">Click here to get your results</div>
+
+<div class="chart" width="250"></div>
+
+
+</body>
+</html>
